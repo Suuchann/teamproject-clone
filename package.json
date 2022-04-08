@@ -1,0 +1,24 @@
+{
+  "name": "teamproject-clone",
+  "version": "1.0.0",
+  "description": "팀프로젝트 https://www.gong-cha.co.kr/brand/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suuchann/teamproject-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suuchann/teamproject-clone/issues"
+  },
+  "homepage": "https://github.com/Suuchann/teamproject-clone#readme",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "jquery": "^3.6.0"
+  }
+}
