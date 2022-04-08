@@ -6,6 +6,9 @@ a, a:link {
     color: inherit;
     text-decoration: none;
 }
+.d-none {
+    display: none;
+}
 /* header */
 header {
     margin: 10px 0;
