@@ -105,19 +105,19 @@ header {
     margin: 30px;
     color: #656565;
 }
-.snb {
+.footer-menu {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
 }
-.snb li {
+.footer-menu li {
     padding-right: 15px;
     border-right: 1px solid #656565;
 }
-.snb li:nth-child(4) {
+.footer-menu li:nth-child(4) {
     font-size: 1.250rem;
 }
-.snb li:last-child {
+.footer-menu li:last-child {
     border-right: 0px;
 }
 address {
