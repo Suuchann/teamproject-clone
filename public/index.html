@@ -8,16 +8,18 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=dotum&family=Arial&family=sans-serif&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7435ab004e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/suuStyle.css">
     <title>공차</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/suuStyle.css">
     <script>
         $(document).ready(function(){
-        $('.slider').bxSlider();
+            $('.slider').bxSlider({
+                pager: false
+            });
         });
     </script>
     <style>
@@ -105,13 +107,15 @@
     </section>
     <section>
         <h2 class="d-none"></h2>
-        <div class="slider">
-            <div><a href="#"><img src="images/hero-img1.jpg" alt="비주얼1_그래놀라"></a></div>
-            <div><a href="#"><img src="images/hero-img2.jpg" alt="비주얼2_그릭요거트"></a></div>
-            <!-- <div><a href="#"><img src="images/hero-img3.webp" alt="비주얼3_그래놀라"></a></div> -->
-            <div><a href="#"><img src="images/hero-img4.jpg" alt="비주얼4_딸기시즌1"></a></div>
-            <div><a href="#"><img src="images/hero-img5.jpg" alt="비주얼5_딸기시즌2"></a></div>
-            <div><a href="#"><img src="images/hero-img6.jpg" alt="비주얼6_베스트콤비"></a></div>
+        <div class="slider-wrap">
+            <div class="slider">
+                <div><a href="#"><img src="images/hero-img1.jpg" alt="비주얼1_그래놀라"></a></div>
+                <div><a href="#"><img src="images/hero-img2.jpg" alt="비주얼2_그릭요거트"></a></div>
+                <!-- <div><a href="#"><img src="images/hero-img3.webp" alt="비주얼3_그래놀라"></a></div> -->
+                <div><a href="#"><img src="images/hero-img4.jpg" alt="비주얼4_딸기시즌1"></a></div>
+                <div><a href="#"><img src="images/hero-img5.jpg" alt="비주얼5_딸기시즌2"></a></div>
+                <div><a href="#"><img src="images/hero-img6.jpg" alt="비주얼6_베스트콤비"></a></div>
+            </div>
         </div>
     </section>
     <section>
@@ -135,9 +139,9 @@
             </div>
             <div class="top-right">
                 <h3>매장검색</h3>
-                <p>공차 매장을 쉽고 빠르게 찾아보세요.</p>
-                <input type="text" placeholder="매장명 또는 주소를 입력하세요">
-                <input type="submit" value="매장검색하기">
+                <p>공차 매장을 쉽고 빠르게<br>찾아보세요.</p>
+                <input type="text" id="searchInput" placeholder="매장명 또는 주소를 입력하세요">
+                <input type="submit" id="searchBt" value="매장검색하기">
             </div>
         </div>
         <h2 class="d-none">본문 중간</h2>
@@ -150,14 +154,12 @@
                 </a>
             </div>
             <div class="middle-right">
-                <div class="middleBt">
+                <!-- <div class="middleBt">
                     <div class="nextBt"><img src="images/brand_main_section4_next.gif" alt=""></div>
                     <div class="prevBt"><img src="images/brand_main_section4_prev.gif" alt=""></div>
-                </div>
-                <div class="slider">
+                </div> -->
+                <div class="middle-slider">
                     <div><a href="#"><img src="images/middle-img1.png" alt="프로모션"></a></div>
-                    <div><a href="#"><img src="images/middle-img2.jpg" alt="프로모션 배민"></a></div>
-                    <div><a href="#"><img src="images/middle-img3.jpg" alt="프로모션 위메프오"></a></div>
                 </div>
             </div>
         </div>
@@ -165,10 +167,16 @@
         <div class="main-bottom">
             <div class="bottom-left">
                 <h3>공차 가맹점 개설문의</h3>
-                <dt>개설안내</dt>
-                <dd>공차만의 프랜차이즈 운영<br>노하우로 안정된 창업을 이루세요.</dd>
-                <dt>FAQ</dt>
-                <dd>가맹점 개설과 관련한<br>자주 묻는 질문입니다.</dd>
+                <div class="faq-wrap">
+                    <ul class="faq-left">
+                        <li>개설안내</li>
+                        <li>공차만의 프랜차이즈 운영<br>노하우로 안정된 창업을 이루세요.</li>
+                    </ul>
+                    <ul class="faq-right">
+                        <li>FAQ</li>
+                        <li>가맹점 개설과 관련한<br>자주 묻는 질문입니다.</li>
+                    </ul>
+                </div>
                 <div><a href="#">내용보기</a></div>
             </div>
             <div class="bottom-center">
@@ -183,38 +191,40 @@
     </section>
     <section>
         <h2 class="d-none">공차 티 레시피</h2>
-        <h3>공차 티 레시피</h3>
-        <ul>
-            <li>오리지널 티</li>
-            <li>밀크티</li>
-            <li>과일믹스</li>
-        </ul>
-        <ul>
-            <li>
-                <img src="images/brand_main_recipe_img1.jpg" alt="오리지널티">
-                <h4>TEA RECIPE - 티 레시피</h4>
-                <h5>오리지널 티 - Original Tea</h5>
-                <p>티백이나 가루나 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다<br>
-                    다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</p>
-                <div><a href="#">메뉴 보러가기 &gt;</a></div>
-            </li>
-            <li>
-                <img src="images/brand_main_recipe_img2.jpg" alt="밀크티">
-                <h4>TEA RECIPE - 티 레시피</h4>
-                <h5>밀크티 - Milk Tea</h5>
-                <p>최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와<br>
-                    허니, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
-                <div><a href="#">메뉴 보러가기 &gt;</a></div>
-            </li>
-            <li>
-                <img src="images/brand_main_recipe_img5.jpg" alt="과일믹스">
-                <h4>TEA RECIPE - 티 레시피</h4>
-                <h5>과일믹스 - Fruit Mix</h5>
-                <p>찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br>
-                    달콤상큼한 과일을 더해 만듭니다.</p>
-                <div><a href="#">메뉴 보러가기 &gt;</a></div>
-            </li>
-        </ul>
+        <div class="tea-recipe">
+            <h3>공차 티 레시피</h3>
+            <ul>
+                <li>오리지널 티</li>
+                <li>밀크티</li>
+                <li>과일믹스</li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/brand_main_recipe_img1.jpg" alt="오리지널티">
+                    <h4>TEA RECIPE - 티 레시피</h4>
+                    <h5>오리지널 티 - Original Tea</h5>
+                    <p>티백이나 가루나 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다<br>
+                        다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</p>
+                    <div><a href="#">메뉴 보러가기 &gt;</a></div>
+                </li>
+                <li class="d-none">
+                    <img src="images/brand_main_recipe_img2.jpg" alt="밀크티">
+                    <h4>TEA RECIPE - 티 레시피</h4>
+                    <h5>밀크티 - Milk Tea</h5>
+                    <p>최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와<br>
+                        허니, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
+                    <div><a href="#">메뉴 보러가기 &gt;</a></div>
+                </li>
+                <li class="d-none">
+                    <img src="images/brand_main_recipe_img5.jpg" alt="과일믹스">
+                    <h4>TEA RECIPE - 티 레시피</h4>
+                    <h5>과일믹스 - Fruit Mix</h5>
+                    <p>찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br>
+                        달콤상큼한 과일을 더해 만듭니다.</p>
+                    <div><a href="#">메뉴 보러가기 &gt;</a></div>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer>
         <h2 class="d-none">푸터</h2>
@@ -254,5 +264,7 @@
             </div>
         </div>
     </footer>
+    <script src="script/main.js"></script>
+   
 </body>
 </html>
