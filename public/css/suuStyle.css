@@ -221,6 +221,7 @@ header {
 .faq-wrap {
     width: 320px;
     height: 200px;
+    margin: 0 0 30px 0;
 }
 .faq-left {
     display: flex;
@@ -246,20 +247,107 @@ header {
     text-align: center;
     background: #6d5547;
 }
-.bottom-center {
+.bottom-center-wrap {
     float: left;
     width: 400px;
     height: 450px;
     background: url("/public/images/bottom-center-img.jpg") no-repeat center / cover;
 }
-.bottom-right {
+.bottom-center {
+    box-sizing: border-box;
+    padding: 390px 0 0 40px;
+    display: flex;
+    width: 400px;
+    height: 150px;
+    align-items: center;
+    text-align: left;
+}
+.bottom-title {
+    font-weight: 700;
+    color: #c30f30;
+    margin-right: 90px;
+}
+.title2 {
+    margin-right: 170px;
+}
+.bottom-text {
+    color: #656565;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: underline;
+}
+.bottom-right-wrap {
     float: left;
     width: 400px;
     height: 450px;
     background: url("/public/images/bottom-right-img.jpg") no-repeat center / cover;
 }
-.tea-recipe {
+.bottom-right {
+    box-sizing: border-box;
+    padding: 390px 0 0 40px;
+    display: flex;
+    width: 400px;
+    height: 150px;
+    align-items: center;
+    text-align: left;
+}
+.tea-recipe-wrap {
     background: #f5eee8;
+}
+.tea-recipe {
+    width: 1200px;
+    height: 470px;
+    margin: 0 auto;
+}
+.tea-recipe-top {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 150px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.tea-recipe-top h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.tea-recipe-top ul {
+    display: flex;
+}
+.tea-recipe-top li {
+    margin: 0 25px;
+    /* color: #983b43;
+    border-bottom: 1px solid #983b43; */
+}
+.recipe img {
+    width: 600px;
+    height: 255px;
+    float: left;
+}
+.recipe li {
+    height: 255px;
+    text-align: left;
+}
+.recipe h4 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+.recipe h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #983b43;
+    margin: 0 0 30px 0;
+}
+.recipe p {
+    line-height: 25px;
+    margin: 0 0 40px 0;
+}
+.recipe a {
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 1px solid #983b43;
+    color: #983b43;
 }
 /* order */
 .hero-wrap {
