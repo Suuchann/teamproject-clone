@@ -8,20 +8,13 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=dotum&family=Arial&family=sans-serif&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7435ab004e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/suuStyle.css">
     <title>공차</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="css/suuStyle.css">
-    <script>
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                pager: false
-            });
-        });
-    </script>
     <style>
         ::selection {
             background-color: #983b43;
@@ -99,139 +92,62 @@
     </header>
     <section>
         <h2 class="d-none">팝업과 측면 버튼</h2>
-        <div class="modal"></div>
-        <!-- 이것은... 그 팝업 했던 코드 찾아보기 -->
         <div class="quickmenu-wrap">
             <div class="quickmenu"><a href="#"><img src="images/fixed.png" alt="가맹점 개설문의"></a></div>
         </div>
     </section>
     <section>
-        <h2 class="d-none"></h2>
-        <div class="slider-wrap">
-            <div class="slider">
-                <div><a href="#"><img src="images/hero-img1.jpg" alt="비주얼1_그래놀라"></a></div>
-                <div><a href="#"><img src="images/hero-img2.jpg" alt="비주얼2_그릭요거트"></a></div>
-                <!-- <div><a href="#"><img src="images/hero-img3.webp" alt="비주얼3_그래놀라"></a></div> -->
-                <div><a href="#"><img src="images/hero-img4.jpg" alt="비주얼4_딸기시즌1"></a></div>
-                <div><a href="#"><img src="images/hero-img5.jpg" alt="비주얼5_딸기시즌2"></a></div>
-                <div><a href="#"><img src="images/hero-img6.jpg" alt="비주얼6_베스트콤비"></a></div>
+        <div class="hero-wrap">
+            <div class="hero">
+                <h3 class="hero-title">음료</h3>
+                <p>공차의 다양한 음료를 소개합니다.</p>
+            </div>
+        </div>
+        <div class="location-wrap">
+            <div class="location">
+                <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="arrw-icon"><i class="fa-solid fa-angle-right"></i></div>
+                <a href="#">메뉴</a>
+                <div class="arrw-icon"><i class="fa-solid fa-angle-right"></i></div>
+                <p>음료</p>
             </div>
         </div>
     </section>
     <section>
-        <h2 class="d-none">서브 메뉴</h2>
-        <div class="snb-wrap">
-            <ul class="snb">
-                <li><a href="#">그릭요거트 3종 구매시</a></li>
-                <li><a href="#">공차 &amp; 그릭요거트</a></li>
-                <li><a href="#">그릭요거트 신메뉴</a></li>
-                <li><a href="#">딸기 시즌 신메뉴</a></li>
-                <li><a href="#">딸기 시즌 메뉴</a></li>
-                <li><a href="#">베스트콤비네이션</a></li>
+        <div class="product-snb-wrap">
+            <ul class="product-snb">
+                <li><a href="#">시즌 메뉴</a></li>
+                <li><a href="#">베스트 콤비네이션</a></li>
+                <li><a href="#">오리지널 티</a></li>
+                <li><a href="#">밀크티</a></li>
+                <li><a href="#">쥬얼리</a></li>
+                <li><a href="#">과일믹스</a></li>
+                <li><a href="#">스무디</a></li>
+                <li><a href="#">커피</a></li>
             </ul>
         </div>
-    </section>
-    <section>
-        <h2 class="d-none">본문 상단</h2>
-        <div class="main-top">
-            <div class="top-left">
-                <a href="#"><img src="images/top-left-img.jpg" alt="베스트 콤비네이션"></a>
-            </div>
-            <div class="top-right">
-                <h3>매장검색</h3>
-                <p>공차 매장을 쉽고 빠르게<br>찾아보세요.</p>
-                <input type="text" id="searchInput" placeholder="매장명 또는 주소를 입력하세요">
-                <input type="submit" id="searchBt" value="매장검색하기">
-            </div>
-        </div>
-        <h2 class="d-none">본문 중간</h2>
-        <div class="main-middle">
-            <div class="middle-left">
-                <a href="#">
-                    <h3>HOW TO ORDER 주문하기</h3>
-                    <p>공차는 취향에 맞게 토핑, 당도, 얼음량까지<br>맞춤주문 가능합니다.</p>
-                    <p>자세히 보기 &gt;</p>
-                </a>
-            </div>
-            <div class="middle-right">
-                <!-- <div class="middleBt">
-                    <div class="nextBt"><img src="images/brand_main_section4_next.gif" alt=""></div>
-                    <div class="prevBt"><img src="images/brand_main_section4_prev.gif" alt=""></div>
-                </div> -->
-                <div class="middle-slider">
-                    <div><a href="#"><img src="images/middle-img1.png" alt="프로모션"></a></div>
-                </div>
-            </div>
-        </div>
-        <h2 class="d-none">본문 하단</h2>
-        <div class="main-bottom">
-            <div class="bottom-left">
-                <h3>공차 가맹점 개설문의</h3>
-                <div class="faq-wrap">
-                    <ul class="faq-left">
-                        <li>개설안내</li>
-                        <li>공차만의 프랜차이즈 운영<br>노하우로 안정된 창업을 이루세요.</li>
-                    </ul>
-                    <ul class="faq-right">
-                        <li>FAQ</li>
-                        <li>가맹점 개설과 관련한<br>자주 묻는 질문입니다.</li>
-                    </ul>
-                </div>
-                <div><a href="#">내용보기</a></div>
-            </div>
-            <div class="bottom-center-wrap">
-                <div class="bottom-center">
-                    <p class="bottom-title">NEW 공차 멤버십 앱 안내</p>
-                    <p class="bottom-text">자세히 보기 &gt;</p>
-                </div>
-            </div>
-            <div class="bottom-right-wrap">
-                <div class="bottom-right">
-                    <p class="bottom-title title2">오픈 매장 안내</p>
-                    <p class="bottom-text">자세히 보기 &gt;</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="d-none">공차 티 레시피</h2>
-        <div class="tea-recipe-wrap">
-            <div class="tea-recipe">
-                <div class="tea-recipe-top">
-                    <h3>공차 티 레시피</h3>
-                    <ul>
-                        <li>오리지널 티</li>
-                        <li>밀크티</li>
-                        <li>과일믹스</li>
-                    </ul>
-                </div>
-                <ul class="recipe">
+        <div class="product">
+            <h4>시즌 메뉴</h4>
+            <!-- 2022 봄 시즌 음료 -->
+            <h5>2022 봄 시즌 음료</h5>
+            <div class="product-list-wrap">
+                <ul class="product-list">
                     <li>
-                        <img src="images/brand_main_recipe_img1.jpg" alt="오리지널티">
-                        <h4>TEA RECIPE - 티 레시피</h4>
-                        <h5>오리지널 티 - Original Tea</h5>
-                        <p>티백이나 가루나 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다<br>
-                            다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</p>
-                        <div class=""><a href="#">메뉴 보러가기 &gt;</a></div>
+                        <img src="images/2022Spring1.png" alt="그릭요거트 & 밀크티 크러쉬">
+                        <p>그릭요거트 &amp; 밀크티 크러쉬</p>
                     </li>
-                    <li class="d-none">
-                        <img src="images/brand_main_recipe_img2.jpg" alt="밀크티">
-                        <h4>TEA RECIPE - 티 레시피</h4>
-                        <h5>밀크티 - Milk Tea</h5>
-                        <p>최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와<br>
-                            허니, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
-                        <div><a href="#">메뉴 보러가기 &gt;</a></div>
+                    <li>
+                        <img src="images/2022Spring2.png" alt="그릭요거트 & 망고 밀크티 크러쉬">
+                        <p>그릭요거트 &amp; 망고 밀크티 크러쉬</p>
                     </li>
-                    <li class="d-none">
-                        <img src="images/brand_main_recipe_img5.jpg" alt="과일믹스">
-                        <h4>TEA RECIPE - 티 레시피</h4>
-                        <h5>과일믹스 - Fruit Mix</h5>
-                        <p>찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br>
-                            달콤상큼한 과일을 더해 만듭니다.</p>
-                        <div><a href="#">메뉴 보러가기 &gt;</a></div>
+                    <li>
+                        <img src="images/2022Spring3.png" alt="그릭요거트 & 딸기 밀크티 크러쉬">
+                        <p>그릭요거트 &amp; 딸기 밀크티 크러쉬</p>
                     </li>
                 </ul>
             </div>
+            <!-- 2022 봄 시즌 음료 -->
+            <!-- 2021 겨울 스페셜 시즌 음료 -->
         </div>
     </section>
     <footer>
@@ -272,7 +188,5 @@
             </div>
         </div>
     </footer>
-    <script src="script/main.js"></script>
-   
 </body>
 </html>
