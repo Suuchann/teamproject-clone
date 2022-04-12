@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3e7a3c02b.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="css/style.css">
+    <title>News page</title>
+</head>
+<body>
+    <div id="pageTop">
+        <div class="page_hgroup event">
+            <h2 class="title">NEWS</h2>
+            <p class="title-text">공차의 다양한 소식을 확인해 보세요</p>
+        </div>
+    </div>
+    <div id="contents">
+        <div class="tab_style">
+            <ul>
+                <li class="notice">
+                    <a href="notice.html">공지사항</a>
+                </li>
+                <li class="on">
+                    <a href="news.html">보도자료
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <form></form> -->
+        <form id="frmSearch" name="frmSearch" method="get">
+            <input type="hidden" name="page" id="page" value="1">
+            <input type="hidden" name="c" id="c" value="NEWS">
+            <div class="board_search_wrap mb60">
+                <select name="sf" id="sf" style="width:280px;">
+                    <option value="all">전체</option>
+                    <option value="subject">제목</option>
+                    <option value="content">내용</option>
+                </select>
+                <div class="box" style="width:860px;">
+                    <input type="text" name="sw" id="sw" placeholder="검색어를 입력해 주세요." value="">
+                    <input type="submit" value="검색">
+                </div>
+            </div>
+            
+        </form>
+        <div class="txt_list_wrap">
+            <ul class="txt_list">
+                <li>
+                    <p class="date">2022년 03월 08일</p>
+                    <p class="tit">공차코리아, 그릭요그트 신메뉴 3종 출시</p>
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>
+                <li>
+                    <p class="date">2021년 02월 10일</p>
+                    <p class="tit">공차 코리아, '딸기 신메뉴 2종' 출시</p>
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>
+                <li>
+                    <p class="date">2022년 01월 13일</p>
+                    <p class="tit">공차코리아, '딸기 신메뉴 3종' 출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2021년 11월 30일</p>
+                    <p class="tit">공차코리아,'클래식 밀크티' 출시!</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                  
+                </li>
+                <li>
+                    <p class="date">2021년 11월 18일</p>
+                    <p class="tit">공차코리아, 패션 브랜드 오아이오아이오아 함께'멤버십 e-프리퀀</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                  
+                </li>
+                <li>
+                    <p class="date">2021년 11월 10일</p>
+                    <p class="tit">공차코리아,신메뉴'하동 호지 밀크티+펄'출시 </p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2021년 10월 20일</p>
+                    <p class="tit">공차코리아, 음료와 찰떡 궁합인 '베이커리 2종'신메뉴 출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2021년 10월 13일</p>
+                    <p class="tit">공차코리아, 초콜렛 32종 신메뉴 출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                 
+                </li>
+                <li>
+                    <p class="date">2021년 09월 08일</p>
+                    <p class="tit">공차코리아, '허니 자몽 신메뉴 2종'출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                 
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
