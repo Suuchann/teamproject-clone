@@ -3,6 +3,8 @@
 팀프로젝트   
 - 공차 홈페이지 clone 만들기   
 https://www.gong-cha.co.kr/brand/   
+- figma 주소   
+https://www.figma.com/files/project/53606491/Team-project?fuid=1073070974884778396   
 
 - 팀원 (가나다 순)   
 고우리   
