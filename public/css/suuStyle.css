@@ -564,6 +564,70 @@ header {
 .order3-right-bottom h5 {
     margin: 90px 40px 0 0;
 }
+/* product */
+/* .product-list {
+    transition: all .3s;
+} */
+.product-snb-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.product-snb {
+    /* display: flex; */
+    width: 1200px;
+    height: 80px;
+    margin: 100px 0;
+    padding: 15px 0;
+    align-items: center;
+    overflow: auto;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #e4e4e4;
+}
+.product-snb li {
+    float: left;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444;
+    margin: 3px 70px 3px 0;
+    font-weight: 700;
+}
+.product-snb a:hover {
+    border-bottom: 1px solid #c20f2f;
+    color: #c20f2f;
+}
+.product-snb li:before {
+    content: url("/public/images/bullet2.png");
+    display: inline;
+    margin-right: 10px;
+}
+.product {
+    width: 1200px;
+    margin: 0 auto;
+}
+.product h4 {
+    text-align: left;
+    margin: 20px 0 20px 20px;
+}
+.product-list-wrap {
+    width: 1200px;
+    display: flex;
+}
+.product-list {
+    display: flex;
+}
+.product-list li {
+    overflow: hidden;
+    width: 260px;
+    height: 350px;
+    text-align: center;
+    border-bottom: 1px solid #b4b4b4;
+    margin: 20px 40px 50px 0;
+}
+.product-list li img {
+    width: 255px;
+    height: 300px;
+}
 /* footer */
 .footer-wrap {
     width: 1200px;
