@@ -8,12 +8,15 @@ https://www.figma.com/files/project/53606491/Team-project?fuid=10730709748847783
 
 - 팀원 (가나다 순)   
 고우리   
-박수현   
+박수현 ［팀장］   
 최희지   
 
 - 파트 분담 (최대한 할 수 있는데까지!)   
-index: 박수현   
+index: 박수현 ［완료］   
+├─header/footer: 박수현 ［완료］   
+└─(복사 붙여넣기로 모든 문서에 적용!!)   
 Brand: 고우리   
 Menu: 박수현   
+└─order/product ［완료］   
 Benefit: 최희지   
 Event&News: 최희지   
