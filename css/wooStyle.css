@@ -69,14 +69,23 @@ header {
 
 
 
-.title_eng .title_kor {
+.title_eng {
     font-size: 42px;
     color : #fff;
+    text-align: left;
 }
+
+.title_kor {
+    font-size: 42px;
+    color : #fff;
+    text-align: left;
+}
+
 
 .txt {
     font-size: 17px;
     color : #fff;
+    text-align: left;
 }
 
 
@@ -101,30 +110,16 @@ header {
     margin: 0 0 46px;
 }
 
-.video {
-    background: url("https://www.youtube.com/embed/d-U7gVRuDr4?autoplay=1&amp;rel=0&amp;loop=1");
-    width: 1200px;
-    height: 659px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    
-}
-
 .brand_story_wrap .body ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
     margin: 0 auto;
     justify-content: center;
 }
 
 .brand_story_wrap .body ul li {
     padding-top: 30px;
-    float: flex;
-}
+    }
 
 .body li {
     float: left;
@@ -151,19 +146,18 @@ header {
 
 .txt2 {
     font-size: 16px;
+    
     }
 
 .txt3 {
+    width: 100%;
     font-size: 16px;
-    margin: 20px 0 0;
+    margin: 0 0 20px;
     }
 
-p {
-    display: block;
-}
 
 .info {
-    margin: 0 0 30px;
+    margin: 0 auto;
 }
 
 .smallTitle {
@@ -171,32 +165,25 @@ p {
     color: #983b43;
     font-weight: 700;
     line-height: 24px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .brand_promise_wrap .hgroup .visual img {
     position: relative;
-        
 }
 
 .visual {
-    text-align: left;
-    width: 1200px;
-    height: 337px;
-}
+    text-align: center;
+    }
 
 .contents ol li{
-    width: 100%;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-    z-index: 1;
 }
 
-.n-motion.n-left.n-active {
-    transform: translateX(0);
-}
-
-.left n1 n-motion n-left n-active .left n3 n-motion n-left n-active {
+.right n1 n-motion n-right n-active .right n3 n-motion n-right n-active {
     text-align: right;
     padding: 0 79px 0 0;
     color: #666;
@@ -206,7 +193,6 @@ p {
 .right n2 n-motion n-right n-active .right n4 n-motion n-right n-active{
     text-align: left;
     padding: 0 79px 0 0;
-    margin: 112px;
     color: #666;
     float: right;
 }
@@ -217,8 +203,9 @@ p {
     top: -20px;
     position: absolute;
     font-weight: 800;
-    background: #ffffff;
+    /* background: #ffffff; */
     text-align: center;
+    padding: 10px;
 }
 
 
