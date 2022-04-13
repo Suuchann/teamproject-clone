@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=dotum&family=Arial&family=sans-serif&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7435ab004e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notice page</title>
+</head>
+<body>
+    <header>
+        <h1 class="d-none">공차 홈페이지</h1>
+        <h2 class="d-none">메인 메뉴</h2>
+        <div class="header-wrap">
+            <div><a href="#"><img src="images/logo.png" alt="공차로고"></a></div>
+            <div class="gnb-wrap">
+                <ul class="gnb">
+                    <li><a href="#">Brand</a> <!-- 브랜드 -->
+                        <ul class="dropdown">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">공차의 약속</a></li>
+                            <li><a href="#">브랜드 아이덴티티</a></li>
+                            <li><a href="#">세계속의 공차</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu</a> <!-- 메뉴 -->
+                        <ul class="dropdown">
+                            <li><a href="#">주문방법</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">MD상품</a></li>
+                            <li><a href="#">티스토리</a></li>
+                            <li><a href="#">티레시피</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Store</a> <!-- 매장 -->
+                        <ul class="dropdown">
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">가맹점 개설문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Membership</a> <!-- 멤버십 -->
+                        <ul class="dropdown">
+                            <li><a href="#">NEW 공차 멤버십</a></li>
+                            <li><a href="#">공차 카드 &amp; e-Gift</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Benefit</a> <!-- 제휴 서비스 -->
+                        <ul class="dropdown">
+                            <li><a href="#">통신사 제휴</a></li>
+                            <li><a href="#">결제 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Event&amp;News</a> <!-- 이벤트&amp;뉴스 -->
+                        <ul class="dropdown">
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="notice.html">공차소식</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sns-wrap">
+                <ul class="sns">
+                    <li><a href="https://www.gong-cha.co.kr/brand/board/notice.php">공지사항</a></li>
+                    <li><a href="https://www.facebook.com/GongCha.Korea"><img src="images/btn_f.png" alt="페이스북"></a></li>
+                    <li><a href="https://www.instagram.com/gongcha.official/?hl=ko"><img src="images/btn_i.png" alt="인스타그램"></a></li>
+                    <li><a href="https://pf.kakao.com/_Cywfxb"><img src="images/btn_k.png" alt="카카오톡"></a></li>
+                </ul>
+            </div>
+            <div class="franchise-wrap">
+                <div class="franchise">
+                    <a href="#"><img src="" alt="">가맹점 개설문의<br>02-3276-9583</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2 class="d-none">팝업과 측면 버튼</h2>
+        <div class="modal"></div>
+        <!-- 이것은... 그 팝업 했던 코드 찾아보기 -->
+        <div class="quickmenu-wrap">
+            <div class="quickmenu"><a href="#"><img src="images/fixed.png" alt="가맹점 개설문의"></a></div>
+        </div>
+    </section>
+    <div id="pageTop">
+        <div class="page_hgroup event">
+            <h2 class="title">NEWS</h2>
+            <p class="title-text">공차의 다양한 소식을 확인해 보세요</p>
+        </div>
+    </div>
+    <div class="location-wrap">
+        <div class="location">
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="arrw-icon"><i class="fa-solid fa-angle-right"></i></div>
+            <a href="#">이벤트&뉴스</a>
+            <div class="arrw-icon"><i class="fa-solid fa-angle-right"></i></div>
+            <p>뉴스</p>
+        </div>
+    </div>
+    <div id="contents">
+        <div class="tab_style">
+            <ul>
+                <li class="on">
+                    <a href="notice.html">공지사항
+                    </a>
+                </li>
+                <li><a href="news.html">보도자료</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <form></form> -->
+        <form id="frmSearch" name="frmSearch" method="get">
+            <input type="hidden" name="page" id="page" value="1">
+            <input type="hidden" name="c" id="c" value="NEWS">
+            <div class="board_search_wrap mb60">
+                <select name="sf" id="sf" style="width:280px;">
+                    <option value="all">전체</option>
+                    <option value="subject">제목</option>
+                    <option value="content">내용</option>
+                </select>
+                <div class="box" style="width:860px;">
+                    <input type="text" name="sw" id="sw" placeholder="검색어를 입력해 주세요." value="">
+                    <input type="submit" value="검색">
+                </div>
+            </div>
+            
+        </form>
+        <div class="txt_list_wrap">
+            <ul class="txt_list">
+                <li>
+                    <p class="date">2022년 03월 29일</p>
+                    <p class="tit">공차코리아, 멤버십 회원가입 연령 변경 안내</p>
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>
+                <li>
+                    <p class="date">2021년 12월 20일</p>
+                    <p class="tit">공차 일부 메뉴 가격 인상 안내</p>
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>
+                <li>
+                    <p class="date">2022년 01월 13일</p>
+                    <p class="tit">공차 음료 영양정보 안내</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2022년 07월 15일</p>
+                    <p class="tit">공차 모바일 메뉴 교환권 및 금액권 이용 매장 안내</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                  
+                </li>
+                <li>
+                    <p class="date">2022년 03월 13일</p>
+                    <p class="tit">공차 멤버십 앱 오픈 연기 안내</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                  
+                </li>
+                <li>
+                    <p class="date">2022년 01월 26일</p>
+                    <p class="tit">멤버십 앱 리뉴얼 및 시스템 점 검을 위한 서비스 일시 중단 안내 </p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2022년 01월 13일</p>
+                    <p class="tit">공차 딸기&치즈 신메뉴 4종 출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>
+                </li>                   
+                <li>
+                    <p class="date">2022년 08월 25일</p>
+                    <p class="tit">공차 티마스터 콜드컵 2종 출시</p>  
+                    <a href="#" class="btn_detail red">자세히보기→</a>                 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <h2 class="d-none">푸터</h2>
+        <div class="footer-wrap">
+            <div class="footer-left-wrap">
+                <div class="footer-left">
+                    <div class="ft-logo">
+                        <a href="#"><img src="images/ft_logo.png" alt="공차 로고"></a>
+                    </div>
+                    <p id="copyright">&copy;GONGCHA KOREA CO.,LTD<br>ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            <div class="footer-right-wrap">
+                <div class="footer-right">
+                    <ul class="footer-menu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">제휴&sol;제안</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">HOT-LINE</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                    <ul>
+                        <address>
+                            <p>고객센터 <i class="fa-solid fa-phone"></i> 02-779-7758&nbsp;</p>
+                            <p>(운영시간 오전 9시~ 오후 6시 &sol; 주말 및 공휴일 휴무)</p>
+                        </address>
+                        <ul class="footer-right-addr">
+                            <li>서울 종로구 종로 47(공평동, 7층)</li>
+                            <li>㈜공차코리아 대표이사 김의열</li>
+                            <li>사업자등록번호 214-88-84534</li>
+                            <li>통신판매번호: 2020-서울종로-0966</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+
+</body>
+</html>
