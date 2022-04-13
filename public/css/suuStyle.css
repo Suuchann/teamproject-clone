@@ -609,24 +609,40 @@ header {
     text-align: left;
     margin: 20px 0 20px 20px;
 }
+.product h5 {
+    background: url("/public/images/season_list_hgroup_back.gif") no-repeat center / cover;
+    width: 1200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c20f2f;
+    line-height: 60px;
+}
 .product-list-wrap {
     width: 1200px;
     display: flex;
 }
 .product-list {
     display: flex;
+    flex-wrap: wrap;
 }
 .product-list li {
     overflow: hidden;
     width: 260px;
-    height: 350px;
+    height: 380px;
     text-align: center;
-    border-bottom: 1px solid #b4b4b4;
+    border-bottom: 1px solid #e4e4e4;
     margin: 20px 40px 50px 0;
 }
 .product-list li img {
     width: 255px;
     height: 300px;
+}
+.product-list p {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+}
+.list-2 {
 }
 /* footer */
 .footer-wrap {
