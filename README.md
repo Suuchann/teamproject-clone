@@ -20,5 +20,4 @@ Menu: 박수현
 Benefit: 최희지   
 Event&News: 최희지   
 
-- LINK
-https://suuchann.github.io/teamproject-clone/public/
+[LINK](https://suuchann.github.io/teamproject-clone/public/)
